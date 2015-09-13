@@ -1,0 +1,109 @@
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/Documents/website (master)
+$ cd ~/.ssh
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ ssh-keygen -t rsa -b 4096 -C "viping1794@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/nitin_x3ws5s5/.ssh/id_rsa):
+/c/Users/nitin_x3ws5s5/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/nitin_x3ws5s5/.ssh/id_rsa.
+Your public key has been saved in /c/Users/nitin_x3ws5s5/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:xY9l1lsJ3mmrPKiMXPaQ4FMCr0HzcDuwZMmhC3AqObA viping1794@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|o .  .       .   |
+|o=  o o  .  ..o o|
+|E. . @ .  o +..=.|
+|... = X .. *  .o.|
+|   . o BS.. . .. |
+|      + = . o .  |
+|     . o = . +   |
+|      . * +   .  |
+|       o o .     |
++----[SHA256]-----+
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ ssh-keygen -t rsa -b 4096 -C "viping1794@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/nitin_x3ws5s5/.ssh/id_rsa): git_rsa
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in git_rsa.
+Your public key has been saved in git_rsa.pub.
+The key fingerprint is:
+SHA256:InVlFXDWNIaNsODrh9ixUFwwWVqzqIFvw9h5GD9R6NI viping1794@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|        +=@+=B+  |
+|     . oo@ *o.o. |
+|    . +oO o      |
+|     *.XEo       |
+|    o %.S        |
+|     o O =       |
+|      . = .      |
+|         .       |
+|                 |
++----[SHA256]-----+
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ cat git_rsa.pub | pbcopy
+bash: pbcopy: command not found
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ cat git_rsa.pub|pbcopy
+bash: pbcopy: command not found
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ cat git_rsa.pub | pbcopy
+bash: pbcopy: command not found
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ someCommand | clip
+bash: someCommand: command not found
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ cat git_rsa.pub | clip
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ ssh-add git_rsa
+Could not open a connection to your authentication agent.
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ ^C
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ ssh-agent -s
+SSH_AUTH_SOCK=/tmp/ssh-I8LD9o4umPXK/agent.8792; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=5936; export SSH_AGENT_PID;
+echo Agent pid 5936;
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ ssh-add git_rsa
+Could not open a connection to your authentication agent.
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ eval $(ssh.agent)
+bash: ssh.agent: command not found
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ eval $(ssh-agent)
+Agent pid 2428
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ ssh-add git_rsa
+Identity added: git_rsa (git_rsa)
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ ssh -T git@github.com
+The authenticity of host 'github.com (192.30.252.131)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.252.131' (RSA) to the list of known hosts.
+Hi vipin-gupta! You've successfully authenticated, but GitHub does not provide shell access.
+
+nitin_x3ws5s5@Nitin-Gupta-PC MINGW64 ~/.ssh
+$ cd Documents/website/
